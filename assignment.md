@@ -22,7 +22,7 @@ threshold = 30
 Answer:
 
 ```python
-
+df[df['B'] > threshold]
 ```
 
 ### Question 2
@@ -38,7 +38,8 @@ df = pd.DataFrame({'A': [2, 1, 2], 'B': [2, 3, 1], 'C': [1, 2, 3]})
 Answer:
 
 ```python
-
+df_sorted = df.sort_values(by=['A', 'B'])
+df_sorted
 ```
 
 ### Question 3
@@ -55,7 +56,8 @@ df2 = pd.DataFrame({'A': [7, 8, 9], 'B': [10, 11, 12]})
 Answer:
 
 ```python
-
+df_concatenated = pd.concat([df1, df2], axis=0)
+print(df_concatenated)
 ```
 
 ### Question 4
@@ -71,7 +73,7 @@ df = pd.DataFrame({'A': [1, 2, 3, 4, 5]})
 Answer:
 
 ```python
-
+df.cumsum()
 ```
 
 ### Question 5
@@ -87,7 +89,7 @@ series = pd.Series(['apple', 'banana', 'cherry'])
 Answer:
 
 ```python
-
+series.str.upper()
 ```
 
 ## Submission
